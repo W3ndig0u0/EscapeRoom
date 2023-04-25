@@ -5,26 +5,27 @@ using UnityEngine.Video;
 
 public class VideoChoiseButton : MonoBehaviour
 {
-
     private VideoPlayer videoPlayer;
-    
+
     void Start()
     {
         videoPlayer = FindFirstObjectByType<VideoPlayer>();
+        this.gameObject.transform.localScale = new Vector3(0, 0, 0);
     }
 
-    public void ChangeClip(VideoClip clip)
+    void Update()
     {
-        videoPlayer.clip = clip;
-        videoPlayer.Play();
+        CheckVideoDone();
     }
 
-    public void ButtonPressed()
+    private void CheckVideoDone()
     {
-        Debug.Log("A");
+
+        if ((videoPlayer.frame) > 0 && (videoPlayer.isPlaying == false))
+        {
+            this.gameObject.transform.localScale = new Vector3(1, 1, 1);
+        }
     }
-
-
 
 
 }

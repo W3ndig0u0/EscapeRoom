@@ -9,26 +9,14 @@ public class VideoChoise : MonoBehaviour
 
     void Start()
     {
-        videoPlayer = FindFirstObjectByType<VideoPlayer>();
-        this.gameObject.transform.localScale = new Vector3(0, 0, 0);
+        videoPlayer = GetComponent<VideoPlayer>();
     }
 
-    void Update()
+    public void ChangeClip(VideoClip clip)
     {
-        CheckVideoDone();
-    }
-
-    private void CheckVideoDone()
-    {
-
-        if ((videoPlayer.frame) > 0 && (videoPlayer.isPlaying == false))
-        {
-            this.gameObject.transform.localScale = new Vector3(1, 1, 1);
-        }
-
-        //ASDASD
-
-
+        videoPlayer.clip = clip;
+        videoPlayer.Play();
+        //Hide buttons
     }
 
 }
