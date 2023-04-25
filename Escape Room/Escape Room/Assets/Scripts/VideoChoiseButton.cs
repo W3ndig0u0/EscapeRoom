@@ -2,10 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Video;
+using UnityEngine.UI;
+
 
 public class VideoChoiseButton : MonoBehaviour
 {
     private VideoPlayer videoPlayer;
+    public Button btn2;
 
     void Start()
     {
@@ -25,6 +28,12 @@ public class VideoChoiseButton : MonoBehaviour
         {
             this.gameObject.transform.localScale = new Vector3(1, 1, 1);
         }
+    }
+
+    public void RemoveButton()
+    {
+        btn2.gameObject.SetActive(false);
+        this.gameObject.SetActive(false);
     }
 
 

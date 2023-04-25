@@ -7,6 +7,8 @@ public class VideoChoise : MonoBehaviour
 {
     private VideoPlayer videoPlayer;
 
+
+
     void Start()
     {
         videoPlayer = GetComponent<VideoPlayer>();
@@ -16,7 +18,6 @@ public class VideoChoise : MonoBehaviour
     {
         videoPlayer.clip = clip;
         videoPlayer.Play();
-        //Hide buttons
     }
 
 }
