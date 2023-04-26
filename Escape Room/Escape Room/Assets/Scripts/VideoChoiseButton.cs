@@ -27,14 +27,23 @@ public class VideoChoiseButton : MonoBehaviour
         if ((videoPlayer.frame) > 0 && (videoPlayer.isPlaying == false))
         {
             this.gameObject.transform.localScale = new Vector3(1, 1, 1);
+            return;
         }
+        this.gameObject.transform.localScale = new Vector3(0, 0, 0);
     }
 
-    public void RemoveButton()
+    public void RemoveButton() 
     {
         btn2.gameObject.SetActive(false);
         this.gameObject.SetActive(false);
     }
+
+    public void ActivateNewButton(GameObject btnParent)
+    {
+        btnParent.SetActive(true);
+    }
+
+
 
 
 }
