@@ -360,7 +360,7 @@ MonoBehaviour:
         m_MethodName: ChangeClip
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 32900000, guid: b908eb3a1f1d26d4a805405e2909c0ef, type: 3}
+          m_ObjectArgument: {fileID: 32900000, guid: febc14ad1c2d73246ad651f553c88930, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Video.VideoClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -704,7 +704,7 @@ MonoBehaviour:
         m_MethodName: ChangeClip
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 32900000, guid: f4611f9d23e1d7c42b0856d88215b400, type: 3}
+          m_ObjectArgument: {fileID: 32900000, guid: 15ffa6f33868f794484dcd19b962d65a, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Video.VideoClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -875,7 +875,7 @@ MonoBehaviour:
         m_MethodName: ChangeClip
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 32900000, guid: b908eb3a1f1d26d4a805405e2909c0ef, type: 3}
+          m_ObjectArgument: {fileID: 32900000, guid: febc14ad1c2d73246ad651f553c88930, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Video.VideoClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -2267,7 +2267,7 @@ MonoBehaviour:
         m_MethodName: ChangeClip
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 32900000, guid: d172c9a32363044468412d0006c2a4e9, type: 3}
+          m_ObjectArgument: {fileID: 32900000, guid: 4b7ad5622d57c974ba0e15a7a59aaba7, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Video.VideoClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -3144,7 +3144,7 @@ MonoBehaviour:
         m_MethodName: ChangeClip
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 32900000, guid: c88df63aa4171b44bad7d5cf1ccb1690, type: 3}
+          m_ObjectArgument: {fileID: 32900000, guid: c39778f5b14f2674e8b8e283db46d51f, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Video.VideoClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
