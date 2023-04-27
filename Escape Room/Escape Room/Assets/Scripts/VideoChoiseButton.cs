@@ -43,6 +43,11 @@ public class VideoChoiseButton : MonoBehaviour
         btnParent.SetActive(true);
     }
 
+    public void ShowStoryboard(GameObject storyBoardImg)
+    {
+        storyBoardImg.SetActive(true);
+    }
+
 
 
 
