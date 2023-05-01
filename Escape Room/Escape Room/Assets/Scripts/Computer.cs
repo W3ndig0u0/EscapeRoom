@@ -7,6 +7,7 @@ public class Computer : MonoBehaviour
 
     {
        [SerializeField] private GameObject appSquare;
+
        
     // Start is called before the first frame update
     void Start()
@@ -17,7 +18,8 @@ public class Computer : MonoBehaviour
     private void OnMouseDown()
     {
         Debug.Log("Square clicked!");
-          appSquare.SetActive(true);
+        appSquare.SetActive(true);
+        this.gameObject.SetActive(false);   
     }
 
 
@@ -29,6 +31,7 @@ public class Computer : MonoBehaviour
         {
             Debug.Log("Square touched!");
             appSquare.SetActive(true);
+            this.gameObject.SetActive(false);   
         }
     }
 }
