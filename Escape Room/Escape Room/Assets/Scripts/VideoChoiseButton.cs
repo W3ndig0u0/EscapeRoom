@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Video;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 
 public class VideoChoiseButton : MonoBehaviour
@@ -48,7 +49,9 @@ public class VideoChoiseButton : MonoBehaviour
         storyBoardImg.SetActive(true);
     }
 
-
-
+    public void Replay()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
 
 }
