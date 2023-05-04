@@ -27,8 +27,10 @@ public class OptionsPanel : MonoBehaviour
 
     public void HideOptions()
     {
+        Debug.Log(optionsPanel);
         if (optionsPanel != null)
         {
+            Debug.Log("hej");
             optionsPanel.SetActive(false);
             startButton.interactable = true;
             optionsButton.interactable = true;
