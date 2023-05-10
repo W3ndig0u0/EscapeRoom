@@ -10,11 +10,16 @@ public class VideoChoiseButton : MonoBehaviour
 {
     private VideoPlayer videoPlayer;
     public Button btn2;
+    public bool key;
 
     void Start()
     {
         videoPlayer = FindFirstObjectByType<VideoPlayer>();
         this.gameObject.transform.localScale = new Vector3(0, 0, 0);
+        
+        PlayerPrefs.SetInt("HasKey", key ? 1 : 0);
+        PlayerPrefs.Save();
+
     }
 
     void Update()
@@ -24,7 +29,6 @@ public class VideoChoiseButton : MonoBehaviour
 
     private void CheckVideoDone()
     {
-
         if ((videoPlayer.frame) > 0 && (videoPlayer.isPlaying == false))
         {
             this.gameObject.transform.localScale = new Vector3(1, 1, 1);
@@ -53,5 +57,11 @@ public class VideoChoiseButton : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
-
+    public void TakeKey()
+    {
+        key = true;
+        Debug.Log(key);
+        PlayerPrefs.SetInt("HasKey", key ? 1 : 0);
+        PlayerPrefs.Save();
+    }
 }

@@ -722,6 +722,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn2: {fileID: 303452985}
+  key: 0
 --- !u!114 &87545745
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -894,6 +895,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn2: {fileID: 1840214011}
+  key: 0
 --- !u!114 &99952292
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1466,6 +1468,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn2: {fileID: 1078191836}
+  key: 0
 --- !u!1 &178542238
 GameObject:
   m_ObjectHideFlags: 0
@@ -1785,6 +1788,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn2: {fileID: 295992128}
+  key: 0
 --- !u!114 &295992128
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2187,6 +2191,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn2: {fileID: 87545745}
+  key: 0
 --- !u!114 &303452985
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2809,6 +2814,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn2: {fileID: 496840548}
+  key: 0
 --- !u!114 &411994577
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3269,6 +3275,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 496840549}
+        m_TargetAssemblyTypeName: VideoChoiseButton, Assembly-CSharp
+        m_MethodName: TakeKey
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &496840549
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3282,6 +3300,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn2: {fileID: 411994577}
+  key: 0
 --- !u!114 &496840550
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3794,6 +3813,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn2: {fileID: 927373036}
+  key: 0
 --- !u!222 &720153753
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3836,6 +3856,7 @@ GameObject:
   - component: {fileID: 753314062}
   - component: {fileID: 753314061}
   - component: {fileID: 753314060}
+  - component: {fileID: 753314064}
   m_Layer: 5
   m_Name: "\xD6ppna med nyckel"
   m_TagString: Untagged
@@ -3877,6 +3898,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn2: {fileID: 1633659038}
+  key: 0
 --- !u!114 &753314061
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3950,7 +3972,7 @@ MonoBehaviour:
         m_MethodName: ActivateNewButton
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgument: {fileID: 579803869}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -3995,6 +4017,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 753314058}
   m_CullTransparentMesh: 1
+--- !u!114 &753314064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 753314058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 558979bd65a82cf4c8c89ae134aeea25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &792897848
 GameObject:
   m_ObjectHideFlags: 0
@@ -4981,6 +5015,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn2: {fileID: 927373036}
+  key: 0
 --- !u!114 &927373036
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5399,6 +5434,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn2: {fileID: 1471177741}
+  key: 0
 --- !u!114 &980367416
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5636,6 +5672,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn2: {fileID: 720153749}
+  key: 0
 --- !u!114 &1045430098
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6174,6 +6211,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn2: {fileID: 168940413}
+  key: 0
 --- !u!1 &1082205823
 GameObject:
   m_ObjectHideFlags: 0
@@ -7147,6 +7185,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn2: {fileID: 1282429731}
+  key: 0
 --- !u!114 &1219512689
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7429,6 +7468,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn2: {fileID: 1434283704}
+  key: 0
 --- !u!114 &1241128038
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7871,6 +7911,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn2: {fileID: 1219512687}
+  key: 0
 --- !u!114 &1282429731
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8043,6 +8084,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn2: {fileID: 1471177741}
+  key: 0
 --- !u!114 &1285862514
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8728,6 +8770,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn2: {fileID: 1431173685}
+  key: 0
 --- !u!114 &1431173685
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8959,6 +9002,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn2: {fileID: 1241128038}
+  key: 0
 --- !u!114 &1434283706
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9131,6 +9175,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn2: {fileID: 1593087355}
+  key: 0
 --- !u!114 &1460389145
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9320,6 +9365,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn2: {fileID: 980367416}
+  key: 0
 --- !u!114 &1471177741
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9655,6 +9701,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn2: {fileID: 1733314515}
+  key: 0
 --- !u!1 &1524511639
 GameObject:
   m_ObjectHideFlags: 0
@@ -9909,6 +9956,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn2: {fileID: 1570275836}
+  key: 0
 --- !u!114 &1570275836
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10081,6 +10129,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn2: {fileID: 1460389143}
+  key: 0
 --- !u!114 &1593087355
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10358,6 +10407,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn2: {fileID: 753314061}
+  key: 0
 --- !u!114 &1633659038
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11292,6 +11342,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn2: {fileID: 927373036}
+  key: 0
 --- !u!1 &1755187052
 GameObject:
   m_ObjectHideFlags: 0
@@ -11346,6 +11397,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn2: {fileID: 2055672086}
+  key: 0
 --- !u!114 &1755187055
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11689,6 +11741,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn2: {fileID: 99952292}
+  key: 0
 --- !u!114 &1840214011
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12399,6 +12452,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn2: {fileID: 1755187055}
+  key: 0
 --- !u!114 &2055672088
 MonoBehaviour:
   m_ObjectHideFlags: 0
