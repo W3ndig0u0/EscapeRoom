@@ -16,11 +16,23 @@ public class FastForward : MonoBehaviour
     }
 
     public void FastForwardBtn(){
-        videoPlayer.playbackSpeed = 3f;
-        if ((videoPlayer.frame) >= (long)(videoPlayer.frameCount - 1) && !videoPlayer.isLooping)
+        
+        if (videoPlayer.playbackSpeed == 1f)
+        {
+            videoPlayer.playbackSpeed = 3f;
+        }
+
+        else if (videoPlayer.playbackSpeed == 3f)
         {
             videoPlayer.playbackSpeed = 1f;
         }
+
+        /*videoPlayer.playbackSpeed = 3f;
+        if ((videoPlayer.frame) >= (long)(videoPlayer.frameCount - 1) && !videoPlayer.isLooping)
+        {
+            videoPlayer.playbackSpeed = 1f;
+        }*/
+
     }
 
 
