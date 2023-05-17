@@ -1,37 +1,40 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
+using System.Collections.Generic;
 
 public class Computer : MonoBehaviour
+{
+    [SerializeField] private GameObject appSquare;
+    [SerializeField] private GameObject exitButton;
+    [SerializeField] private GameObject startButton;
+    private bool appSquareActive = true;
 
-
+    private void Update()
     {
-       [SerializeField] private GameObject appSquare;
-
-       
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    private void OnMouseDown()
-    {
-        Debug.Log("Square clicked!");
-        appSquare.SetActive(true);
-        this.gameObject.SetActive(false);   
-    }
-
-
-
-    // Update is called once per frame
-     private void Update()
-    {
-        if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
+        if (Input.GetMouseButtonDown(0) || (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began))
         {
-            Debug.Log("Square touched!");
-            appSquare.SetActive(true);
-            this.gameObject.SetActive(false);   
+            // Check if UI button is touched
+            if (EventSystem.current.IsPointerOverGameObject() || IsTouchOverUIObject())
+            {
+                Debug.Log("EXIT!");
+                appSquareActive = !appSquareActive;
+                return;
+            }
+
+            Debug.Log("Start!");
+
+            appSquareActive = !appSquareActive;
+            appSquare.SetActive(appSquareActive);
+            startButton.SetActive(!appSquareActive);
         }
+    }
+
+    private bool IsTouchOverUIObject()
+    {
+        PointerEventData eventData = new PointerEventData(EventSystem.current);
+        eventData.position = Input.mousePosition;
+        List<RaycastResult> results = new List<RaycastResult>();
+        EventSystem.current.RaycastAll(eventData, results);
+        return results.Count > 0;
     }
 }
