@@ -6,8 +6,20 @@ using UnityEngine.UI;
 
 public class FastForward : MonoBehaviour
 {
-        private VideoPlayer videoPlayer;
+    private VideoPlayer videoPlayer;
 
+    [SerializeField] private Sprite[] buttonSprites;
+    [SerializeField] private Image targetButton;
+
+    public void ChangeSprite()
+    {
+        if (targetButton.sprite == buttonSprites[0])
+        {
+            targetButton.sprite = buttonSprites[1];
+            return;
+        }
+        targetButton.sprite = buttonSprites[0];
+    }   
 
     void Start()
     {
