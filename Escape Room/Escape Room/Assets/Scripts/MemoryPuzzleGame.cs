@@ -2,39 +2,25 @@
     using System.Collections.Generic;
     using UnityEngine;
 
-    public class MemoryPuzzleGame : MonoBehaviour
+public class MemoryPuzzleGame : MonoBehaviour
+{
+    public Card[] cards; // Array of all cards in the game
+    private Card previousCard; // Previously flipped card
+    private int score; // Player's score
+    public GameObject timerSlider;
+
+    private void Start()
     {
-        public Card[] cards; // Array of all cards in the game
-        private Card previousCard; // Previously flipped card
-        private int score; // Player's score
+        // Initialize variables
+        previousCard = null;
+        score = 0;
 
-        private void Start()
+        // Attach click event handlers to each card
+        foreach (Card card in cards)
         {
-            // Shuffle the cards
-            ShuffleCards();
-
-            // Initialize variables
-            previousCard = null;
-            score = 0;
-
-            // Attach click event handlers to each card
-            foreach (Card card in cards)
-            {
-                card.OnCardClicked += CardClicked;
-            }
+            card.OnCardClicked += CardClicked;
         }
-
-        private void ShuffleCards()
-        {
-            // Fisher-Yates shuffle algorithm
-            for (int i = cards.Length - 1; i > 0; i--)
-            {
-                int randomIndex = Random.Range(0, i + 1);
-                Card temp = cards[i];
-                cards[i] = cards[randomIndex];
-                cards[randomIndex] = temp;
-            }
-        }
+    }
 
 private void CardClicked(Card clickedCard)
 {
@@ -69,7 +55,9 @@ private void CardClicked(Card clickedCard)
 
     if (score == cards.Length / 2)
     {
+
         Debug.Log("All pairs matched.");
+        timerSlider.SetActive(false);
     }
 }
 
@@ -89,5 +77,11 @@ private IEnumerator RemoveMatchedPair(Card card1, Card card2)
 
         card1.Flip();
         card2.Flip();
+    }
+
+    public void RemoveKey(){
+        foreach(Card card in cards){
+            Destroy(card.gameObject);
+        }
     }
 }
