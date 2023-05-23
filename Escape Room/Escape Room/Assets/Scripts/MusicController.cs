@@ -16,6 +16,7 @@ public class MusicController : MonoBehaviour
         button2.gameObject.SetActive(false);
     }
 
+
     private void OnDestroy()
     {
         button1.onClick.RemoveListener(OnButton1Click);
@@ -38,4 +39,3 @@ public class MusicController : MonoBehaviour
         audioSource.Play();
     }
 }
-
