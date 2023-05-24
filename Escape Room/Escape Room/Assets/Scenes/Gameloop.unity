@@ -3308,7 +3308,7 @@ MonoBehaviour:
         m_MethodName: ChangeClip
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 32900000, guid: cecf13b58b1d9b44bb16f4b2e21e564a, type: 3}
+          m_ObjectArgument: {fileID: 32900000, guid: 444184c503e1c91488c9a6fbd719f686, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Video.VideoClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -3363,6 +3363,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 496840549}
+        m_TargetAssemblyTypeName: VideoChoiseButton, Assembly-CSharp
+        m_MethodName: ChangeLoopingKlip
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &496840549
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3377,8 +3389,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   btn2: {fileID: 411994577}
   key: 0
-  VideoPlayerObject: {fileID: 0}
-  NewVid: {fileID: 0}
+  VideoPlayerObject: {fileID: 679084461}
+  NewVid: {fileID: 32900000, guid: f3ee07c14f31b5f42b5f92f6ed3435e8, type: 3}
 --- !u!114 &496840550
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8070,7 +8082,7 @@ MonoBehaviour:
         m_MethodName: ChangeClip
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 32900000, guid: 4b7ad5622d57c974ba0e15a7a59aaba7, type: 3}
+          m_ObjectArgument: {fileID: 32900000, guid: 43fc324b139cb0548bd2602abef8dab2, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Video.VideoClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -8104,6 +8116,18 @@ MonoBehaviour:
       - m_Target: {fileID: 2111947647}
         m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
         m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1078191839}
+        m_TargetAssemblyTypeName: VideoChoiseButton, Assembly-CSharp
+        m_MethodName: ChangeLoopingKlip
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8165,8 +8189,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   btn2: {fileID: 168940413}
   key: 0
-  VideoPlayerObject: {fileID: 0}
-  NewVid: {fileID: 0}
+  VideoPlayerObject: {fileID: 679084461}
+  NewVid: {fileID: 32900000, guid: f3ee07c14f31b5f42b5f92f6ed3435e8, type: 3}
 --- !u!1 &1087969251
 GameObject:
   m_ObjectHideFlags: 0
@@ -14649,7 +14673,7 @@ MonoBehaviour:
         m_MethodName: ChangeClip
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 32900000, guid: d64418134dd8c84418e9da56265abbc5, type: 3}
+          m_ObjectArgument: {fileID: 32900000, guid: 4b34b5921667f104cbbeac305f810a16, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Video.VideoClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -14692,6 +14716,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2055672087}
+        m_TargetAssemblyTypeName: VideoChoiseButton, Assembly-CSharp
+        m_MethodName: ChangeLoopingKlip
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2055672087
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14706,8 +14742,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   btn2: {fileID: 1755187055}
   key: 0
-  VideoPlayerObject: {fileID: 0}
-  NewVid: {fileID: 0}
+  VideoPlayerObject: {fileID: 679084461}
+  NewVid: {fileID: 32900000, guid: d3a4ede3034572c4090753163e14e3ca, type: 3}
 --- !u!114 &2055672088
 MonoBehaviour:
   m_ObjectHideFlags: 0
