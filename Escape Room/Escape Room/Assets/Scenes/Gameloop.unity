@@ -664,8 +664,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   btn2: {fileID: 303452985}
   secretExitButton: {fileID: 0}
-  VideoPlayerObject: {fileID: 0}
-  NewVid: {fileID: 0}
+  VideoPlayerObject: {fileID: 679084461}
+  NewVid: {fileID: 32900000, guid: 9bf3d70a669855c4aa608be64f891ea1, type: 3}
 --- !u!114 &87545745
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -715,7 +715,7 @@ MonoBehaviour:
         m_MethodName: ChangeClip
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 32900000, guid: febc14ad1c2d73246ad651f553c88930, type: 3}
+          m_ObjectArgument: {fileID: 32900000, guid: b4a38a28c01b9e344877ef99704271ca, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Video.VideoClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -737,6 +737,18 @@ MonoBehaviour:
       - m_Target: {fileID: 87545744}
         m_TargetAssemblyTypeName: VideoChoiseButton, Assembly-CSharp
         m_MethodName: RemoveButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 87545744}
+        m_TargetAssemblyTypeName: VideoChoiseButton, Assembly-CSharp
+        m_MethodName: ChangeLoopingKlip
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1494,11 +1506,11 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 168940416}
         m_TargetAssemblyTypeName: VideoChoiseButton, Assembly-CSharp
-        m_MethodName: RemoveButton
-        m_Mode: 1
+        m_MethodName: ActivateNewButton
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 1397414815}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1506,11 +1518,11 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 168940416}
         m_TargetAssemblyTypeName: VideoChoiseButton, Assembly-CSharp
-        m_MethodName: ActivateNewButton
-        m_Mode: 2
+        m_MethodName: RemoveButton
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 793640441}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1824,7 +1836,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   btn2: {fileID: 295992128}
   secretExitButton: {fileID: 0}
-  VideoPlayerObject: {fileID: 0}
+  VideoPlayerObject: {fileID: 679084461}
   NewVid: {fileID: 0}
 --- !u!114 &295992128
 MonoBehaviour:
@@ -1909,6 +1921,18 @@ MonoBehaviour:
       - m_Target: {fileID: 2111947647}
         m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
         m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 295992127}
+        m_TargetAssemblyTypeName: VideoChoiseButton, Assembly-CSharp
+        m_MethodName: ChangeLoopingKlip
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2129,8 +2153,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   btn2: {fileID: 87545745}
   secretExitButton: {fileID: 0}
-  VideoPlayerObject: {fileID: 0}
-  NewVid: {fileID: 0}
+  VideoPlayerObject: {fileID: 679084461}
+  NewVid: {fileID: 32900000, guid: 9bf3d70a669855c4aa608be64f891ea1, type: 3}
 --- !u!114 &303452985
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2180,7 +2204,7 @@ MonoBehaviour:
         m_MethodName: ChangeClip
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 32900000, guid: febc14ad1c2d73246ad651f553c88930, type: 3}
+          m_ObjectArgument: {fileID: 32900000, guid: b4a38a28c01b9e344877ef99704271ca, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Video.VideoClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -2202,6 +2226,18 @@ MonoBehaviour:
       - m_Target: {fileID: 303452984}
         m_TargetAssemblyTypeName: VideoChoiseButton, Assembly-CSharp
         m_MethodName: RemoveButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 303452984}
+        m_TargetAssemblyTypeName: VideoChoiseButton, Assembly-CSharp
+        m_MethodName: ChangeLoopingKlip
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2677,8 +2713,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   btn2: {fileID: 496840548}
   secretExitButton: {fileID: 0}
-  VideoPlayerObject: {fileID: 0}
-  NewVid: {fileID: 0}
+  VideoPlayerObject: {fileID: 679084461}
+  NewVid: {fileID: 32900000, guid: f3ee07c14f31b5f42b5f92f6ed3435e8, type: 3}
 --- !u!114 &411994577
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2728,20 +2764,8 @@ MonoBehaviour:
         m_MethodName: ChangeClip
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 32900000, guid: 5fc2e15d7d9e56c47b60cdcc7a08d395, type: 3}
+          m_ObjectArgument: {fileID: 32900000, guid: 39843b9b0f52f5341b65c0d3f71ee8d3, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Video.VideoClip, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 411994576}
-        m_TargetAssemblyTypeName: VideoChoiseButton, Assembly-CSharp
-        m_MethodName: RemoveButton
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -2759,9 +2783,33 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 411994576}
+        m_TargetAssemblyTypeName: VideoChoiseButton, Assembly-CSharp
+        m_MethodName: RemoveButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 2111947647}
         m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
         m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 411994576}
+        m_TargetAssemblyTypeName: VideoChoiseButton, Assembly-CSharp
+        m_MethodName: ChangeLoopingKlip
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3315,6 +3363,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 411994576}
+        m_TargetAssemblyTypeName: VideoChoiseButton, Assembly-CSharp
+        m_MethodName: ActivateNewButton
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1755187052}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 496840549}
         m_TargetAssemblyTypeName: VideoChoiseButton, Assembly-CSharp
         m_MethodName: RemoveButton
@@ -3322,18 +3382,6 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 411994576}
-        m_TargetAssemblyTypeName: VideoChoiseButton, Assembly-CSharp
-        m_MethodName: ActivateNewButton
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 411994574}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -5413,7 +5461,7 @@ GameObject:
   - component: {fileID: 793640443}
   - component: {fileID: 793640442}
   m_Layer: 0
-  m_Name: "H\xF6gtalaren VALET"
+  m_Name: "H\xF6gtalaren VALET Ej anv\xE4nt"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7031,7 +7079,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: OPEN THE DOOR
+  m_Text: continue to next room
 --- !u!222 &989861754
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8006,7 +8054,7 @@ GameObject:
   - component: {fileID: 1078191836}
   - component: {fileID: 1078191839}
   m_Layer: 5
-  m_Name: Kolla runt i rummet
+  m_Name: Look around in the room
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11489,7 +11537,7 @@ GameObject:
   - component: {fileID: 1511317966}
   - component: {fileID: 1511317965}
   m_Layer: 0
-  m_Name: "\xD6ppna D\xF6rren VALET"
+  m_Name: Room 1 Ending
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11814,7 +11862,7 @@ GameObject:
   - component: {fileID: 1570275836}
   - component: {fileID: 1570275835}
   m_Layer: 5
-  m_Name: "G\xE5 till n\xE4sta"
+  m_Name: Continue to room 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11855,8 +11903,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   btn2: {fileID: 1570275836}
   secretExitButton: {fileID: 0}
-  VideoPlayerObject: {fileID: 0}
-  NewVid: {fileID: 0}
+  VideoPlayerObject: {fileID: 679084461}
+  NewVid: {fileID: 32900000, guid: 10dbc65be5cd5554099bd048575bc763, type: 3}
 --- !u!114 &1570275836
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11906,7 +11954,7 @@ MonoBehaviour:
         m_MethodName: ChangeClip
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 32900000, guid: 44059bf234cb05a48b30358c0802ea0e, type: 3}
+          m_ObjectArgument: {fileID: 32900000, guid: d211c10d5bc7858449673b0c5157b64c, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Video.VideoClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -11940,6 +11988,18 @@ MonoBehaviour:
       - m_Target: {fileID: 2111947647}
         m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
         m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1570275835}
+        m_TargetAssemblyTypeName: VideoChoiseButton, Assembly-CSharp
+        m_MethodName: ChangeLoopingKlip
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -13544,8 +13604,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   btn2: {fileID: 2055672086}
   secretExitButton: {fileID: 0}
-  VideoPlayerObject: {fileID: 0}
-  NewVid: {fileID: 0}
+  VideoPlayerObject: {fileID: 679084461}
+  NewVid: {fileID: 32900000, guid: 067d54ee3e360d840b911af073e99637, type: 3}
 --- !u!114 &1755187055
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13595,7 +13655,7 @@ MonoBehaviour:
         m_MethodName: ChangeClip
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 32900000, guid: 6c49b5c718c580144a23354b65c2264f, type: 3}
+          m_ObjectArgument: {fileID: 32900000, guid: e05138d7726f8db4ea4667af2f5f9879, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Video.VideoClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -13607,7 +13667,7 @@ MonoBehaviour:
         m_MethodName: ActivateNewButton
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 793640441}
+          m_ObjectArgument: {fileID: 1397414815}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -13629,6 +13689,18 @@ MonoBehaviour:
       - m_Target: {fileID: 2111947647}
         m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
         m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1755187054}
+        m_TargetAssemblyTypeName: VideoChoiseButton, Assembly-CSharp
+        m_MethodName: ChangeLoopingKlip
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
