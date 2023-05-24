@@ -7,22 +7,20 @@ using UnityEngine.SceneManagement;
 
 
 public class VideoChoiseButton : MonoBehaviour
-{
+{    
     private VideoPlayer videoPlayer;
     public Button btn2;
-    public bool key;
+    [SerializeField] private GameObject secretExitButton;
 
     public GameObject VideoPlayerObject;
     public VideoClip NewVid;
+    private bool hasKey = false;
+
 
     void Start()
     {
         videoPlayer = FindFirstObjectByType<VideoPlayer>();
         this.gameObject.transform.localScale = new Vector3(0, 0, 0);
-        
-        PlayerPrefs.SetInt("HasKey", key ? 1 : 0);
-        PlayerPrefs.Save();
-
     }
 
     void Update()
@@ -62,15 +60,13 @@ public class VideoChoiseButton : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
+
     public void TakeKey()
     {
-        key = true;
-        Debug.Log(key);
-        PlayerPrefs.SetInt("HasKey", key ? 1 : 0);
-        PlayerPrefs.Save();
+        secretExitButton.SetActive(true);
+        
+        Debug.Log("TAR NYCKELN");
     }
-
-
 
     public void ChangeLoopingKlip()
     {

@@ -663,7 +663,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn2: {fileID: 303452985}
-  key: 0
+  secretExitButton: {fileID: 0}
   VideoPlayerObject: {fileID: 0}
   NewVid: {fileID: 0}
 --- !u!114 &87545745
@@ -1031,7 +1031,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn2: {fileID: 1840214011}
-  key: 0
+  secretExitButton: {fileID: 0}
   VideoPlayerObject: {fileID: 0}
   NewVid: {fileID: 0}
 --- !u!114 &99952292
@@ -1591,7 +1591,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn2: {fileID: 1078191836}
-  key: 0
+  secretExitButton: {fileID: 0}
   VideoPlayerObject: {fileID: 679084461}
   NewVid: {fileID: 32900000, guid: 067d54ee3e360d840b911af073e99637, type: 3}
 --- !u!1 &204864193
@@ -1823,7 +1823,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn2: {fileID: 295992128}
-  key: 0
+  secretExitButton: {fileID: 0}
   VideoPlayerObject: {fileID: 0}
   NewVid: {fileID: 0}
 --- !u!114 &295992128
@@ -2128,7 +2128,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn2: {fileID: 87545745}
-  key: 0
+  secretExitButton: {fileID: 0}
   VideoPlayerObject: {fileID: 0}
   NewVid: {fileID: 0}
 --- !u!114 &303452985
@@ -2676,7 +2676,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn2: {fileID: 496840548}
-  key: 0
+  secretExitButton: {fileID: 0}
   VideoPlayerObject: {fileID: 0}
   NewVid: {fileID: 0}
 --- !u!114 &411994577
@@ -3388,7 +3388,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn2: {fileID: 411994577}
-  key: 0
+  secretExitButton: {fileID: 753314058}
   VideoPlayerObject: {fileID: 679084461}
   NewVid: {fileID: 32900000, guid: f3ee07c14f31b5f42b5f92f6ed3435e8, type: 3}
 --- !u!114 &496840550
@@ -5170,7 +5170,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn2: {fileID: 0}
-  key: 0
+  secretExitButton: {fileID: 0}
   VideoPlayerObject: {fileID: 0}
   NewVid: {fileID: 0}
 --- !u!222 &720153753
@@ -5222,7 +5222,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &753314059
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5257,7 +5257,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn2: {fileID: 1633659038}
-  key: 0
+  secretExitButton: {fileID: 0}
   VideoPlayerObject: {fileID: 0}
   NewVid: {fileID: 0}
 --- !u!114 &753314061
@@ -6747,7 +6747,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn2: {fileID: 1471177741}
-  key: 0
+  secretExitButton: {fileID: 0}
   VideoPlayerObject: {fileID: 0}
   NewVid: {fileID: 0}
 --- !u!114 &980367416
@@ -7650,7 +7650,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn2: {fileID: 720153749}
-  key: 0
+  secretExitButton: {fileID: 0}
   VideoPlayerObject: {fileID: 0}
   NewVid: {fileID: 0}
 --- !u!114 &1045430098
@@ -8188,7 +8188,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn2: {fileID: 168940413}
-  key: 0
+  secretExitButton: {fileID: 0}
   VideoPlayerObject: {fileID: 679084461}
   NewVid: {fileID: 32900000, guid: f3ee07c14f31b5f42b5f92f6ed3435e8, type: 3}
 --- !u!1 &1087969251
@@ -8981,7 +8981,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn2: {fileID: 1282429731}
-  key: 0
+  secretExitButton: {fileID: 0}
   VideoPlayerObject: {fileID: 0}
   NewVid: {fileID: 0}
 --- !u!114 &1219512689
@@ -9298,7 +9298,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn2: {fileID: 1434283704}
-  key: 0
+  secretExitButton: {fileID: 0}
   VideoPlayerObject: {fileID: 0}
   NewVid: {fileID: 0}
 --- !u!114 &1241128038
@@ -9780,7 +9780,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn2: {fileID: 1219512687}
-  key: 0
+  secretExitButton: {fileID: 0}
   VideoPlayerObject: {fileID: 0}
   NewVid: {fileID: 0}
 --- !u!114 &1282429731
@@ -10047,7 +10047,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn2: {fileID: 1471177741}
-  key: 0
+  secretExitButton: {fileID: 0}
   VideoPlayerObject: {fileID: 0}
   NewVid: {fileID: 0}
 --- !u!114 &1285862514
@@ -10622,7 +10622,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn2: {fileID: 1431173685}
-  key: 0
+  secretExitButton: {fileID: 0}
   VideoPlayerObject: {fileID: 0}
   NewVid: {fileID: 0}
 --- !u!114 &1431173685
@@ -10880,7 +10880,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn2: {fileID: 1241128038}
-  key: 0
+  secretExitButton: {fileID: 0}
   VideoPlayerObject: {fileID: 0}
   NewVid: {fileID: 0}
 --- !u!114 &1434283706
@@ -11067,7 +11067,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn2: {fileID: 1593087355}
-  key: 0
+  secretExitButton: {fileID: 0}
   VideoPlayerObject: {fileID: 0}
   NewVid: {fileID: 0}
 --- !u!114 &1460389145
@@ -11183,7 +11183,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn2: {fileID: 980367416}
-  key: 0
+  secretExitButton: {fileID: 0}
   VideoPlayerObject: {fileID: 0}
   NewVid: {fileID: 0}
 --- !u!114 &1471177741
@@ -11854,7 +11854,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn2: {fileID: 1570275836}
-  key: 0
+  secretExitButton: {fileID: 0}
   VideoPlayerObject: {fileID: 0}
   NewVid: {fileID: 0}
 --- !u!114 &1570275836
@@ -12041,7 +12041,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn2: {fileID: 1460389143}
-  key: 0
+  secretExitButton: {fileID: 0}
   VideoPlayerObject: {fileID: 0}
   NewVid: {fileID: 0}
 --- !u!114 &1593087355
@@ -12442,7 +12442,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn2: {fileID: 753314061}
-  key: 0
+  secretExitButton: {fileID: 0}
   VideoPlayerObject: {fileID: 0}
   NewVid: {fileID: 0}
 --- !u!114 &1633659038
@@ -13373,7 +13373,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn2: {fileID: 0}
-  key: 0
+  secretExitButton: {fileID: 0}
   VideoPlayerObject: {fileID: 0}
   NewVid: {fileID: 0}
 --- !u!1 &1742409986
@@ -13543,7 +13543,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn2: {fileID: 2055672086}
-  key: 0
+  secretExitButton: {fileID: 0}
   VideoPlayerObject: {fileID: 0}
   NewVid: {fileID: 0}
 --- !u!114 &1755187055
@@ -13832,7 +13832,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn2: {fileID: 99952292}
-  key: 0
+  secretExitButton: {fileID: 0}
   VideoPlayerObject: {fileID: 0}
   NewVid: {fileID: 0}
 --- !u!114 &1840214011
@@ -14741,7 +14741,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn2: {fileID: 1755187055}
-  key: 0
+  secretExitButton: {fileID: 0}
   VideoPlayerObject: {fileID: 679084461}
   NewVid: {fileID: 32900000, guid: d3a4ede3034572c4090753163e14e3ca, type: 3}
 --- !u!114 &2055672088
