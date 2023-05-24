@@ -51,11 +51,6 @@ public class VideoChoiseButton : MonoBehaviour
         btnParent.SetActive(true);
     }
 
-    public void ShowStoryboard(GameObject storyBoardImg)
-    {
-        storyBoardImg.SetActive(true);
-    }
-
     public void Replay()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
