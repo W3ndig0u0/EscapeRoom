@@ -12,6 +12,9 @@ public class VideoChoiseButton : MonoBehaviour
     public Button btn2;
     public bool key;
 
+    public GameObject VideoPlayerObject;
+    public VideoClip NewVid;
+
     void Start()
     {
         videoPlayer = FindFirstObjectByType<VideoPlayer>();
@@ -29,8 +32,10 @@ public class VideoChoiseButton : MonoBehaviour
 
     private void CheckVideoDone()
     {
-        if ((videoPlayer.frame) > 0 && (videoPlayer.isPlaying == false))
+        if (videoPlayer.isLooping == true)
+        //((videoPlayer.frame) > 0 && (videoPlayer.isPlaying == false)) 
         {
+            
             this.gameObject.transform.localScale = new Vector3(1, 1, 1);
             return;
         }
@@ -40,7 +45,7 @@ public class VideoChoiseButton : MonoBehaviour
     public void RemoveButton() 
     {
         btn2.gameObject.SetActive(false);
-        this.gameObject.SetActive(false);
+        this.gameObject.SetActive(false);    
     }
 
     public void ActivateNewButton(GameObject btnParent)
@@ -64,4 +69,12 @@ public class VideoChoiseButton : MonoBehaviour
         PlayerPrefs.SetInt("HasKey", key ? 1 : 0);
         PlayerPrefs.Save();
     }
+
+
+
+    public void ChangeLoopingKlip()
+    {
+        VideoPlayerObject.GetComponent<PlayNextVideo>().NewLoopingClip = NewVid;
+    }
+    
 }

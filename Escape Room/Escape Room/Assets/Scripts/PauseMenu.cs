@@ -10,6 +10,7 @@ public class PauseMenu : MonoBehaviour
     [SerializeField] public GameObject PauseMenuPanel;
     private VideoPlayer player;
     public GameObject hideShowGameButtons;
+    public GameObject VideoPlayerObject;
 
     private void Start()
     {
@@ -20,12 +21,14 @@ public class PauseMenu : MonoBehaviour
     {
         PauseMenuPanel.SetActive(true);
         Time.timeScale = 0f;
+        VideoPlayerObject.GetComponent<PlayNextVideo>().enabled = false;
     }
 
     public void ResumeGame()
     {
         PauseMenuPanel.SetActive(false);
         Time.timeScale = 1f;
+        VideoPlayerObject.GetComponent<PlayNextVideo>().enabled = true;
     }
 
     public void PlayPauseVideo()
