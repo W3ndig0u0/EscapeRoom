@@ -1315,12 +1315,12 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 626473}
-  m_Father: {fileID: 1903233816}
+  m_Father: {fileID: 377896330}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -300, y: 0}
+  m_AnchoredPosition: {x: 610.0001, y: 490.00006}
   m_SizeDelta: {x: 102.6267, y: 140}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &136870873
@@ -2213,121 +2213,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 303452982}
   m_CullTransparentMesh: 1
---- !u!1 &315721232
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 315721233}
-  - component: {fileID: 315721236}
-  - component: {fileID: 315721235}
-  - component: {fileID: 315721234}
-  - component: {fileID: 315721238}
-  m_Layer: 5
-  m_Name: Title
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &315721233
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 315721232}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.44589, y: 1.44589, z: 1.44589}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 579803871}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 960, y: -282.5}
-  m_SizeDelta: {x: 1200, y: 200}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!95 &315721234
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 315721232}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 289a630b6c40c4f56bd2a5ab83ea7b1b, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
---- !u!114 &315721235
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 315721232}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 0
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 12800000, guid: 61b1f271b36df4896be8ead2c5825ca9, type: 3}
-    m_FontSize: 80
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 0
-    m_MaxSize: 100
-    m_Alignment: 1
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: MYSTERY ESCAPE
---- !u!222 &315721236
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 315721232}
-  m_CullTransparentMesh: 0
---- !u!114 &315721238
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 315721232}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b958b717a90ade940a9fa2fbc96c3ea3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &331806517
 GameObject:
   m_ObjectHideFlags: 0
@@ -2559,6 +2444,44 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 375982177}
   m_CullTransparentMesh: 1
+--- !u!1 &377896329
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 377896330}
+  m_Layer: 5
+  m_Name: UI Overlay
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &377896330
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 377896329}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 794160874}
+  - {fileID: 136870872}
+  m_Father: {fileID: 1903233816}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &409027831
 GameObject:
   m_ObjectHideFlags: 0
@@ -4550,7 +4473,6 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 315721233}
   - {fileID: 1733314513}
   m_Father: {fileID: 1876506059}
   m_RootOrder: 2
@@ -5459,6 +5381,7 @@ GameObject:
   - component: {fileID: 753314061}
   - component: {fileID: 753314060}
   - component: {fileID: 753314064}
+  - component: {fileID: 753314065}
   m_Layer: 5
   m_Name: "\xD6ppna med nyckel"
   m_TagString: Untagged
@@ -5501,8 +5424,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   btn2: {fileID: 1633659038}
   secretExitButton: {fileID: 0}
-  VideoPlayerObject: {fileID: 0}
-  NewVid: {fileID: 0}
+  VideoPlayerObject: {fileID: 679084461}
+  NewVid: {fileID: 32900000, guid: 5c8dd7446f88e4f6e8fbe8cded369e68, type: 3}
 --- !u!114 &753314061
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5552,7 +5475,7 @@ MonoBehaviour:
         m_MethodName: ChangeClip
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 32900000, guid: 61a9b99a37e1a554da25cad371ba405c, type: 3}
+          m_ObjectArgument: {fileID: 32900000, guid: f3f529b6eb07fe84fb6784f26f35a756, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Video.VideoClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -5586,6 +5509,30 @@ MonoBehaviour:
       - m_Target: {fileID: 2111947647}
         m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
         m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 753314060}
+        m_TargetAssemblyTypeName: VideoChoiseButton, Assembly-CSharp
+        m_MethodName: ChangeLoopingKlip
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 753314065}
+        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
+        m_MethodName: ShowHideGameButtons
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5645,6 +5592,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 558979bd65a82cf4c8c89ae134aeea25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &753314065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 753314058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66cc10a212c66f4449c3440a5ab18ac0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PauseMenuPanel: {fileID: 0}
+  hideShowGameButtons: {fileID: 377896329}
+  VideoPlayerObject: {fileID: 0}
 --- !u!1 &793640441
 GameObject:
   m_ObjectHideFlags: 0
@@ -5742,12 +5704,12 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1284165943}
-  m_Father: {fileID: 1903233816}
+  m_Father: {fileID: 377896330}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 910.0001, y: 490.00006}
   m_SizeDelta: {x: 300, y: 140}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &794160875
@@ -7066,6 +7028,7 @@ GameObject:
   - component: {fileID: 980367417}
   - component: {fileID: 980367416}
   - component: {fileID: 980367415}
+  - component: {fileID: 980367419}
   m_Layer: 5
   m_Name: "D\xF6rr 1"
   m_TagString: Untagged
@@ -7108,8 +7071,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   btn2: {fileID: 1471177741}
   secretExitButton: {fileID: 0}
-  VideoPlayerObject: {fileID: 0}
-  NewVid: {fileID: 0}
+  VideoPlayerObject: {fileID: 679084461}
+  NewVid: {fileID: 32900000, guid: 47fabf48d4c494d94b9d1073d8697e50, type: 3}
 --- !u!114 &980367416
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7159,7 +7122,7 @@ MonoBehaviour:
         m_MethodName: ChangeClip
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 32900000, guid: 6514b75c6d5c5b049a3c791051f39d10, type: 3}
+          m_ObjectArgument: {fileID: 32900000, guid: 84275218371be5640ab8db62d6e8a82b, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Video.VideoClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -7193,6 +7156,30 @@ MonoBehaviour:
       - m_Target: {fileID: 2111947647}
         m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
         m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 980367415}
+        m_TargetAssemblyTypeName: VideoChoiseButton, Assembly-CSharp
+        m_MethodName: ChangeLoopingKlip
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 980367419}
+        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
+        m_MethodName: ShowHideGameButtons
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7240,6 +7227,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 980367413}
   m_CullTransparentMesh: 1
+--- !u!114 &980367419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 980367413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66cc10a212c66f4449c3440a5ab18ac0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PauseMenuPanel: {fileID: 0}
+  hideShowGameButtons: {fileID: 377896329}
+  VideoPlayerObject: {fileID: 0}
 --- !u!1 &982205416
 GameObject:
   m_ObjectHideFlags: 0
@@ -8706,7 +8708,7 @@ RectTransform:
   - {fileID: 1419725619}
   - {fileID: 482761094}
   m_Father: {fileID: 1903233816}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -9750,7 +9752,7 @@ MonoBehaviour:
         m_MethodName: ChangeClip
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 32900000, guid: e34271aef79831a41bd39e373072761f, type: 3}
+          m_ObjectArgument: {fileID: 32900000, guid: a62ba086891d32a4183c7ba9c16366c9, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Video.VideoClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -11405,6 +11407,7 @@ GameObject:
   - component: {fileID: 1460389145}
   - component: {fileID: 1460389143}
   - component: {fileID: 1460389144}
+  - component: {fileID: 1460389148}
   m_Layer: 5
   m_Name: "\xD6ppna ny d\xF6rr"
   m_TagString: Untagged
@@ -11461,7 +11464,7 @@ MonoBehaviour:
         m_MethodName: ChangeClip
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 32900000, guid: 777362b7ebb443e4e9d8454934518b59, type: 3}
+          m_ObjectArgument: {fileID: 32900000, guid: d232a77143a7b7444bde5b488ed228fa, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Video.VideoClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -11516,6 +11519,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1460389148}
+        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
+        m_MethodName: ShowHideGameButtons
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1460389144
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11531,7 +11546,7 @@ MonoBehaviour:
   btn2: {fileID: 1593087355}
   secretExitButton: {fileID: 0}
   VideoPlayerObject: {fileID: 679084461}
-  NewVid: {fileID: 32900000, guid: b7bc6597f9b42464da197728e152706f, type: 3}
+  NewVid: {fileID: 32900000, guid: 5c8dd7446f88e4f6e8fbe8cded369e68, type: 3}
 --- !u!114 &1460389145
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11591,6 +11606,21 @@ RectTransform:
   m_AnchoredPosition: {x: 480, y: -200}
   m_SizeDelta: {x: 570, y: 220}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1460389148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1460389142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66cc10a212c66f4449c3440a5ab18ac0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PauseMenuPanel: {fileID: 0}
+  hideShowGameButtons: {fileID: 377896329}
+  VideoPlayerObject: {fileID: 0}
 --- !u!1 &1471177738
 GameObject:
   m_ObjectHideFlags: 0
@@ -12749,8 +12779,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   btn2: {fileID: 1460389143}
   secretExitButton: {fileID: 0}
-  VideoPlayerObject: {fileID: 0}
-  NewVid: {fileID: 0}
+  VideoPlayerObject: {fileID: 679084461}
+  NewVid: {fileID: 32900000, guid: 767d770f64968f949aa65f73b0daef5d, type: 3}
 --- !u!114 &1593087355
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12800,7 +12830,7 @@ MonoBehaviour:
         m_MethodName: ChangeClip
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 32900000, guid: 651d49e129315a94295a407df036542e, type: 3}
+          m_ObjectArgument: {fileID: 32900000, guid: e0b5230a4c602bc49b66a4b6c615fc48, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Video.VideoClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -12834,6 +12864,18 @@ MonoBehaviour:
       - m_Target: {fileID: 2111947647}
         m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
         m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1593087354}
+        m_TargetAssemblyTypeName: VideoChoiseButton, Assembly-CSharp
+        m_MethodName: ChangeLoopingKlip
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -13201,7 +13243,7 @@ MonoBehaviour:
         m_MethodName: ChangeClip
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 32900000, guid: 232160bf4ff9e104a814592435af5da9, type: 3}
+          m_ObjectArgument: {fileID: 32900000, guid: fa53853d0ab3fe04385eecbe6859d89c, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Video.VideoClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -13978,7 +14020,7 @@ RectTransform:
   m_Children:
   - {fileID: 74309742}
   m_Father: {fileID: 579803871}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -15015,8 +15057,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 794160874}
-  - {fileID: 136870872}
+  - {fileID: 377896330}
   - {fileID: 1093152940}
   m_Father: {fileID: 1876506059}
   m_RootOrder: 0
