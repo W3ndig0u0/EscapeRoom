@@ -39,9 +39,12 @@ public class Options_GameLoop : MonoBehaviour
             mainMenuButton.interactable = true;
             quitGameButton.interactable = true;
             
-
         }
-
     }
 
+    public void Quit()
+    {
+        //audioSource.Play();
+        Application.Quit();
+    }
 }
