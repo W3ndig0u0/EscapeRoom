@@ -8,6 +8,8 @@ public class MemoryPuzzleGame : MonoBehaviour
     private Card previousCard; // Previously flipped card
     private int score; // Player's score
     public GameObject timerSlider;
+    private Animator animator;
+    private bool isInputEnabled = true;
 
     private void Start()
     {
@@ -24,16 +26,17 @@ public class MemoryPuzzleGame : MonoBehaviour
 
 private void CardClicked(Card clickedCard)
 {
-    if (clickedCard.IsMatched)
+    if (!isInputEnabled || clickedCard.IsMatched || clickedCard == previousCard)
+    {
         return;
-
-    clickedCard.Flip();
-
+    }
+    
+    clickedCard.FlipAnimation();
+    
     if (previousCard == null)
     {
         previousCard = clickedCard;
     }
-
     else
     {
         if (previousCard.IsMatch(clickedCard))
@@ -52,31 +55,39 @@ private void CardClicked(Card clickedCard)
         previousCard = null;
     }
 
-
     if (score == cards.Length / 2)
     {
-
         Debug.Log("All pairs matched.");
         timerSlider.SetActive(false);
     }
+
+    // Disable input temporarily
+    isInputEnabled = false;
+    StartCoroutine(EnableInputAfterDelay(0.5f)); // Adjust the delay as needed
 }
 
-private IEnumerator RemoveMatchedPair(Card card1, Card card2)
-{
-    yield return new WaitForSeconds(0.2f);
+    private IEnumerator EnableInputAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        isInputEnabled = true;
+    }
 
-    Destroy(card1.gameObject);
-    Destroy(card2.gameObject);
-    Debug.Log(score);
-}
+    private IEnumerator RemoveMatchedPair(Card card1, Card card2)
+    {
+        yield return new WaitForSeconds(0.2f);
+
+        Destroy(card1.gameObject);
+        Destroy(card2.gameObject);
+        Debug.Log(score);
+    }
 
 
     private IEnumerator FlipCardsBack(Card card1, Card card2)
     {
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(0.3f);
 
-        card1.Flip();
-        card2.Flip();
+        card1.FlipBackAnimation();
+        card2.FlipBackAnimation();
     }
 
     public void RemoveKey(){
