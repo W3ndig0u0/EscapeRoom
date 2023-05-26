@@ -6,12 +6,8 @@ using UnityEngine.SceneManagement;
 public class MenuButton : MonoBehaviour
 {
 
-    //public AudioSource audioSource;
-
     public void LoadMenu()
     {
-
-        //audioSource.Play();
         SceneManager.LoadScene(0);
     }
 

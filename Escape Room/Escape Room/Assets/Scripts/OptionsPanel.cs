@@ -14,6 +14,7 @@ public class OptionsPanel : MonoBehaviour
     public void Start()
     {
         optionsPanel.SetActive(false);
+
     }
 
 
