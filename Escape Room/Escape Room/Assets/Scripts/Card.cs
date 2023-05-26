@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Card : MonoBehaviour
 {
@@ -11,13 +12,13 @@ public class Card : MonoBehaviour
     public Sprite frontSprite; // Front sprite when the card is flipped
     public Sprite backSprite; // Back sprite when the card is not flipped
 
-    private SpriteRenderer spriteRenderer; // Reference to the sprite renderer component
+    private Image spriteRenderer; // Reference to the sprite renderer component
 
     private Animator animator; // Reference to the Animator component
 
     private void Awake()
     {
-        spriteRenderer = GetComponent<SpriteRenderer>();
+        spriteRenderer = GetComponent<Image>();
     }
 
     private void Start()
@@ -26,7 +27,7 @@ public class Card : MonoBehaviour
     }
     
 
-    private void OnMouseDown()
+    public void OnMouseDown()
     {
         OnCardClicked?.Invoke(this);
     }

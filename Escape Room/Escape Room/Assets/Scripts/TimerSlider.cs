@@ -7,7 +7,7 @@ public class TimerSlider : MonoBehaviour
   public float totalTime = 60f; // total time in seconds
   private float timeLeft; // time left in seconds
   private Slider slider; // reference to the UI Slider component
-
+  public VideoChoiseButton videoChoiseButton;
   private void Start()
   {
     slider = GetComponent<Slider>(); // get the Slider component attached to this object
@@ -28,8 +28,10 @@ public class TimerSlider : MonoBehaviour
   }
 
 
-  private void GameOver()
+  public void GameOver()
   {
-    memoryPuzzleGame.RemoveKey();
+    memoryPuzzleGame.GameIsOver();
+    videoChoiseButton.Replay();
+    Destroy(gameObject);
   }
 }

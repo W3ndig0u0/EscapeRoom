@@ -9,33 +9,78 @@ public class MusicController : MonoBehaviour
     public Button button2;
     public AudioSource audioSource;
 
+    private bool isEnabled = true;
+
+    private void Awake()
+    {
+        if (PlayerPrefs.HasKey("MusicEnabled"))
+        {
+            isEnabled = PlayerPrefs.GetInt("MusicEnabled", 1) == 1;
+        }
+        else
+        {
+            isEnabled = true;
+        }
+    
+        SetMusicEnabled(isEnabled);
+    }
+
     private void Start()
     {
         button1.onClick.AddListener(OnButton1Click);
         button2.onClick.AddListener(OnButton2Click);
-        button2.gameObject.SetActive(false);
     }
-
 
     private void OnDestroy()
     {
         button1.onClick.RemoveListener(OnButton1Click);
         button2.onClick.RemoveListener(OnButton2Click);
+
     }
 
     private void OnButton1Click()
     {
-        button1.gameObject.SetActive(false);
-        button2.gameObject.SetActive(true);
-
-        audioSource.Stop();
+        SetMusicEnabled(false);
     }
 
     private void OnButton2Click()
     {
-        button2.gameObject.SetActive(false);
-        button1.gameObject.SetActive(true);
-
-        audioSource.Play();
+        SetMusicEnabled(true);
     }
+
+    private void SetMusicEnabled(bool enabled)
+    {
+        isEnabled = enabled;
+        PlayerPrefs.SetInt("MusicEnabled", enabled ? 1 : 0);
+        PlayerPrefs.Save();
+
+
+        button1.gameObject.SetActive(enabled);
+        button2.gameObject.SetActive(!enabled);
+
+        audioSource.enabled = enabled;
+
+        if (enabled){
+            audioSource.Play();
+        }
+        else
+        {
+            audioSource.Stop();
+        }
+    }
+
+    public void ReplaceAudioSource(AudioClip newAudioClip)
+    {
+        if (audioSource != null)
+        {
+            if (audioSource.isPlaying)
+                audioSource.Stop();
+
+            audioSource.clip = newAudioClip;
+
+            if (isEnabled)
+                audioSource.Play();
+        }
+    }
+
 }

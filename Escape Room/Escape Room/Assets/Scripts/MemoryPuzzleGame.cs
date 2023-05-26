@@ -1,6 +1,7 @@
-    using System.Collections;
-    using System.Collections.Generic;
-    using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.Video;
 
 public class MemoryPuzzleGame : MonoBehaviour
 {
@@ -10,6 +11,15 @@ public class MemoryPuzzleGame : MonoBehaviour
     public GameObject timerSlider;
     private Animator animator;
     private bool isInputEnabled = true;
+
+    public GameObject memoryGame;
+    public VideoClip clip;
+    public VideoChoise videoChoise;
+    public GameObject btnParent;
+    public AudioClip memoryAudio;
+    public AudioClip defaultBgMusic;
+    public MusicController MusicController;
+
 
     private void Start()
     {
@@ -57,13 +67,13 @@ private void CardClicked(Card clickedCard)
 
     if (score == cards.Length / 2)
     {
-        Debug.Log("All pairs matched.");
+        GameIsOver();
         timerSlider.SetActive(false);
     }
 
     // Disable input temporarily
     isInputEnabled = false;
-    StartCoroutine(EnableInputAfterDelay(0.5f)); // Adjust the delay as needed
+    StartCoroutine(EnableInputAfterDelay(0.4f)); // Adjust the delay as needed
 }
 
     private IEnumerator EnableInputAfterDelay(float delay)
@@ -74,7 +84,7 @@ private void CardClicked(Card clickedCard)
 
     private IEnumerator RemoveMatchedPair(Card card1, Card card2)
     {
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(0.5f);
 
         Destroy(card1.gameObject);
         Destroy(card2.gameObject);
@@ -90,9 +100,23 @@ private void CardClicked(Card clickedCard)
         card2.FlipBackAnimation();
     }
 
-    public void RemoveKey(){
-        foreach(Card card in cards){
-            Destroy(card.gameObject);
+    public void GameIsOver(){
+        if (cards[0] != null){
+            foreach(Card card in cards){
+                Destroy(card.gameObject);
+            }
         }
+
+        videoChoise.ChangeClipAuto(clip);
+        videoChoise.ChangeClip(clip);
+        btnParent.SetActive(true);
+        MusicController.ReplaceAudioSource(defaultBgMusic);
+    }
+
+    public void Activate()
+    {
+        memoryGame.SetActive(true);
+        MusicController.ReplaceAudioSource(memoryAudio);
+
     }
 }

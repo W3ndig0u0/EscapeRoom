@@ -20,10 +20,8 @@ public class VideoChoise : MonoBehaviour
         //VideoPlayerObject.GetComponent<PlayNextVideo>().enabled = false;
         
         videoPlayer.clip = clip;
-        videoPlayer.Play();
+        videoPlayer.Play();    
         
-        
-            
     }
 
     public void ChangeClipAuto(VideoClip clip)

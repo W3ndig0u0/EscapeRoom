@@ -59,8 +59,6 @@ public class VideoChoiseButton : MonoBehaviour
     public void TakeKey()
     {
         secretExitButton.SetActive(true);
-        
-        Debug.Log("TAR NYCKELN");
     }
 
     public void ChangeLoopingKlip()
