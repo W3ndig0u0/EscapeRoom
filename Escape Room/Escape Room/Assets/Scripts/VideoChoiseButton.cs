@@ -9,7 +9,7 @@ using UnityEngine.SceneManagement;
 public class VideoChoiseButton : MonoBehaviour
 {    
     private VideoPlayer videoPlayer;
-    public Button btn2;
+    public Button[] btn2;
     [SerializeField] private GameObject secretExitButton;
 
     public GameObject VideoPlayerObject;
@@ -42,7 +42,10 @@ public class VideoChoiseButton : MonoBehaviour
 
     public void RemoveButton() 
     {
-        btn2.gameObject.SetActive(false);
+        foreach (Button btns in btn2){
+            btns.gameObject.SetActive(false);
+        }
+
         this.gameObject.SetActive(false);    
     }
 

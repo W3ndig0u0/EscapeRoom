@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Huvudmeny.unity
     guid: 48e330b1068b14ba5b07b719c977f249
   - enabled: 1
-    path: Assets/Scenes/Gameloop.unity
+    path: Assets/Scenes/Eng.unity
     guid: 9907f6bfbf8546b46923484c41dd6dbc
+  - enabled: 1
+    path: Assets/Scenes/SV.unity
+    guid: eb70719c7bb7977409ef78b50f3191d7
   m_configObjects: {}

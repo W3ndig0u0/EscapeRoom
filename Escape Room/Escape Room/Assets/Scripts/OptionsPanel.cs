@@ -7,13 +7,16 @@ public class OptionsPanel : MonoBehaviour
 {
 
     public GameObject optionsPanel;
+    public GameObject LanguagesPanel;
     public Button startButton;
     public Button optionsButton;
+    public Button languageButton;
     public Button quitButton;
-   
+
     public void Start()
     {
         optionsPanel.SetActive(false);
+        LanguagesPanel.SetActive(false);
 
     }
 
@@ -24,7 +27,6 @@ public class OptionsPanel : MonoBehaviour
         startButton.interactable = false;
         optionsButton.interactable = false;
         quitButton.interactable = false;
-
     }
 
     public void HideOptions()
@@ -36,6 +38,19 @@ public class OptionsPanel : MonoBehaviour
             startButton.interactable = true;
             optionsButton.interactable = true;
             quitButton.interactable = true;
+        }
+
+    }
+
+    public void OnClickedLanguagesButton()
+    {
+        LanguagesPanel.SetActive(true);
+    }
+    public void HideLanguges()
+    {
+        if (LanguagesPanel != null)
+        {
+            LanguagesPanel.SetActive(false);
         }
 
     }

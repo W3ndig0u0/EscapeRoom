@@ -13,10 +13,12 @@ public class MemoryPuzzleGame : MonoBehaviour
     private bool isInputEnabled = true;
 
     public GameObject memoryGame;
+    public GameObject fastForwardBtn;
     public VideoClip clip;
     public VideoChoise videoChoise;
     public GameObject btnParent;
     public AudioClip memoryAudio;
+    public AudioClip pairFound;
     public AudioClip defaultBgMusic;
     public MusicController MusicController;
 
@@ -26,12 +28,23 @@ public class MemoryPuzzleGame : MonoBehaviour
         // Initialize variables
         previousCard = null;
         score = 0;
-
         // Attach click event handlers to each card
         foreach (Card card in cards)
         {
             card.OnCardClicked += CardClicked;
         }
+    }
+
+    private void PlayPairFound()
+    {
+        GameObject audioObj = new GameObject("TempAudioSource");
+        AudioSource tempAudioSource = audioObj.AddComponent<AudioSource>();
+
+        tempAudioSource.clip = pairFound;
+        tempAudioSource.Play();
+
+        Destroy(tempAudioSource, pairFound.length);
+        Destroy(audioObj, pairFound.length);
     }
 
 private void CardClicked(Card clickedCard)
@@ -54,7 +67,7 @@ private void CardClicked(Card clickedCard)
             score++;
             previousCard.Match();
             clickedCard.Match();
-
+            PlayPairFound();
             StartCoroutine(RemoveMatchedPair(previousCard, clickedCard));
         }
         else
@@ -110,13 +123,14 @@ private void CardClicked(Card clickedCard)
         videoChoise.ChangeClipAuto(clip);
         videoChoise.ChangeClip(clip);
         btnParent.SetActive(true);
+        fastForwardBtn.SetActive(true);
         MusicController.ReplaceAudioSource(defaultBgMusic);
     }
 
     public void Activate()
     {
         memoryGame.SetActive(true);
+        fastForwardBtn.SetActive(false);
         MusicController.ReplaceAudioSource(memoryAudio);
-
     }
 }

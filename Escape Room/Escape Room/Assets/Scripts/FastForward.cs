@@ -47,6 +47,11 @@ public class FastForward : MonoBehaviour
 
     }
 
+    public void NormalSpeed()
+    {
+        videoPlayer.playbackSpeed = 1f;
+    }
+
 
 
 }

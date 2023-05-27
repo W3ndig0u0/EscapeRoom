@@ -16,6 +16,7 @@ public class Card : MonoBehaviour
 
     private Animator animator; // Reference to the Animator component
 
+    public AudioSource audio;
     private void Awake()
     {
         spriteRenderer = GetComponent<Image>();
@@ -24,6 +25,7 @@ public class Card : MonoBehaviour
     private void Start()
     {
         animator = GetComponent<Animator>();
+        audio = GetComponent<AudioSource>();
     }
     
 
@@ -34,10 +36,17 @@ public class Card : MonoBehaviour
 
     public void Flip()
     {
+
         if (spriteRenderer.sprite == backSprite)
             spriteRenderer.sprite = frontSprite;
         else
             spriteRenderer.sprite = backSprite;
+    }
+
+    public void SoundPlay()
+    {
+        audio.Play();
+
     }
 
     public void FlipAnimation()
