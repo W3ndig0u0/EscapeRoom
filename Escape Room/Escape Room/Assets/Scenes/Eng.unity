@@ -715,6 +715,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2111947647}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &87545746
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1787,6 +1799,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2111947647}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &136870874
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2739,6 +2763,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2111947647}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &303452986
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3501,7 +3537,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.23641671, y: 0.6167778}
   m_AnchorMax: {x: 0.23641671, y: 0.6167778}
-  m_AnchoredPosition: {x: -7.000305, y: 10}
+  m_AnchoredPosition: {x: -7.0002747, y: 10}
   m_SizeDelta: {x: 120, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!111 &467364539
@@ -4714,7 +4750,7 @@ RectTransform:
   - {fileID: 1955729622}
   - {fileID: 915820867}
   m_Father: {fileID: 1648364047}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -6083,7 +6119,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &797003609
 MonoBehaviour:
@@ -8384,14 +8420,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1042780731}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 81.95996, y: 29.813538, z: -12.146181}
+  m_LocalPosition: {x: 1041.96, y: 569.81354, z: -12.146181}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2111947648}
   - {fileID: 686239661}
-  m_Father: {fileID: 1648364047}
-  m_RootOrder: 3
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1061961425
 GameObject:
@@ -9438,7 +9474,7 @@ RectTransform:
   m_Children:
   - {fileID: 119876328}
   m_Father: {fileID: 1648364047}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -12420,7 +12456,7 @@ MonoBehaviour:
         m_MethodName: ChangeClip
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 32900000, guid: fa5741172c929824ea906154e0a67f3f, type: 3}
+          m_ObjectArgument: {fileID: 32900000, guid: 4de5ede1a07ddc6469899bc2817c1ee6, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Video.VideoClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -12463,6 +12499,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1434283705}
+        m_TargetAssemblyTypeName: VideoChoiseButton, Assembly-CSharp
+        m_MethodName: ChangeLoopingKlip
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1434283705
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12478,8 +12526,8 @@ MonoBehaviour:
   btn2:
   - {fileID: 1241128038}
   secretExitButton: {fileID: 753314058}
-  VideoPlayerObject: {fileID: 0}
-  NewVid: {fileID: 0}
+  VideoPlayerObject: {fileID: 679084461}
+  NewVid: {fileID: 32900000, guid: d1784e2def84af7478b4845b5c61c881, type: 3}
 --- !u!114 &1434283706
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13940,7 +13988,7 @@ MonoBehaviour:
         m_MethodName: ChangeClip
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 32900000, guid: d211c10d5bc7858449673b0c5157b64c, type: 3}
+          m_ObjectArgument: {fileID: 32900000, guid: 85f4452b61c39814c9b312a9f8c0bf31, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Video.VideoClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -14822,7 +14870,6 @@ RectTransform:
   - {fileID: 1724813231}
   - {fileID: 679084462}
   - {fileID: 1876506059}
-  - {fileID: 1042780732}
   - {fileID: 643293530}
   - {fileID: 1159506239}
   m_Father: {fileID: 809151105}
@@ -15589,6 +15636,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96dd0eaefde65f941829a64714fcdb02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  languages: {fileID: 0}
 --- !u!114 &1686334825
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16078,6 +16126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96dd0eaefde65f941829a64714fcdb02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  languages: {fileID: 0}
 --- !u!114 &1733314519
 MonoBehaviour:
   m_ObjectHideFlags: 0
