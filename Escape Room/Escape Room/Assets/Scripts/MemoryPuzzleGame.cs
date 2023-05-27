@@ -80,13 +80,13 @@ private void CardClicked(Card clickedCard)
 
     if (score == cards.Length / 2)
     {
-        GameIsOver();
+        GameIsWon();
         timerSlider.SetActive(false);
     }
 
     // Disable input temporarily
     isInputEnabled = false;
-    StartCoroutine(EnableInputAfterDelay(0.4f)); // Adjust the delay as needed
+    StartCoroutine(EnableInputAfterDelay(0.5f)); // Adjust the delay as needed
 }
 
     private IEnumerator EnableInputAfterDelay(float delay)
@@ -113,15 +113,32 @@ private void CardClicked(Card clickedCard)
         card2.FlipBackAnimation();
     }
 
-    public void GameIsOver(){
-        if (cards[0] != null){
-            foreach(Card card in cards){
+    public void GameIsWon()
+    {
+        if (cards[0] != null)
+        {
+            foreach (Card card in cards)
+            {
                 Destroy(card.gameObject);
             }
         }
 
         videoChoise.ChangeClipAuto(clip);
         videoChoise.ChangeClip(clip);
+        btnParent.SetActive(true);
+        fastForwardBtn.SetActive(true);
+        MusicController.ReplaceAudioSource(defaultBgMusic);
+    }
+    public void GameIsOver()
+    {
+        if (cards[0] != null)
+        {
+            foreach (Card card in cards)
+            {
+                Destroy(card.gameObject);
+            }
+        }
+
         btnParent.SetActive(true);
         fastForwardBtn.SetActive(true);
         MusicController.ReplaceAudioSource(defaultBgMusic);

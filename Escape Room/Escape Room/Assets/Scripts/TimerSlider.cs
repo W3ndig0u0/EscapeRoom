@@ -4,7 +4,7 @@ using UnityEngine.UI;
 public class TimerSlider : MonoBehaviour
 {
   public MemoryPuzzleGame memoryPuzzleGame;
-  public float totalTime = 60f; // total time in seconds
+  public float totalTime; // total time in seconds
   private float timeLeft; // time left in seconds
   private Slider slider; // reference to the UI Slider component
   public VideoChoiseButton videoChoiseButton;

@@ -3154,7 +3154,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.23641671, y: 0.6167778}
   m_AnchorMax: {x: 0.23641671, y: 0.6167778}
-  m_AnchoredPosition: {x: -7.0002747, y: 10}
+  m_AnchoredPosition: {x: -7.000305, y: 10}
   m_SizeDelta: {x: 120, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!111 &467364539
@@ -16587,7 +16587,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   memoryPuzzleGame: {fileID: 643293532}
   totalTime: 75
-  videoChoiseButton: {fileID: 0}
+  videoChoiseButton: {fileID: 1285862513}
 --- !u!114 &1955729624
 MonoBehaviour:
   m_ObjectHideFlags: 0
