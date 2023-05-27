@@ -15,6 +15,7 @@ public class VideoChoiseButton : MonoBehaviour
     public GameObject VideoPlayerObject;
     public VideoClip NewVid;
     private bool hasKey = false;
+    public GameObject ObjectToHide;
 
 
     void Start()
@@ -68,5 +69,11 @@ public class VideoChoiseButton : MonoBehaviour
     {
         VideoPlayerObject.GetComponent<PlayNextVideo>().NewLoopingClip = NewVid;
     }
-    
+
+    public void DisableOnKlick()
+    {
+        if (ObjectToHide.activeInHierarchy == true)
+            ObjectToHide.SetActive(false);
+    }
+
 }

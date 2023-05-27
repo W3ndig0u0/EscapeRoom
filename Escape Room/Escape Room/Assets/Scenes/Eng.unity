@@ -623,6 +623,7 @@ MonoBehaviour:
   secretExitButton: {fileID: 0}
   VideoPlayerObject: {fileID: 679084461}
   NewVid: {fileID: 32900000, guid: 00be619a9bc2f094ba2bdc4f4871cda4, type: 3}
+  ObjectToHide: {fileID: 0}
 --- !u!114 &87545745
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -924,6 +925,7 @@ MonoBehaviour:
   secretExitButton: {fileID: 0}
   VideoPlayerObject: {fileID: 0}
   NewVid: {fileID: 0}
+  ObjectToHide: {fileID: 0}
 --- !u!114 &99952292
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2349,6 +2351,7 @@ MonoBehaviour:
   secretExitButton: {fileID: 0}
   VideoPlayerObject: {fileID: 679084461}
   NewVid: {fileID: 32900000, guid: fded91d766efa4648843758e7c9719cd, type: 3}
+  ObjectToHide: {fileID: 0}
 --- !u!1 &204864193
 GameObject:
   m_ObjectHideFlags: 0
@@ -2471,6 +2474,7 @@ MonoBehaviour:
   secretExitButton: {fileID: 0}
   VideoPlayerObject: {fileID: 679084461}
   NewVid: {fileID: 0}
+  ObjectToHide: {fileID: 0}
 --- !u!114 &295992128
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2670,7 +2674,8 @@ MonoBehaviour:
   - {fileID: 87545745}
   secretExitButton: {fileID: 0}
   VideoPlayerObject: {fileID: 679084461}
-  NewVid: {fileID: 32900000, guid: 00be619a9bc2f094ba2bdc4f4871cda4, type: 3}
+  NewVid: {fileID: 32900000, guid: fded91d766efa4648843758e7c9719cd, type: 3}
+  ObjectToHide: {fileID: 0}
 --- !u!114 &303452985
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2732,7 +2737,7 @@ MonoBehaviour:
         m_MethodName: ActivateNewButton
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 1511317964}
+          m_ObjectArgument: {fileID: 1701226596}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -3075,6 +3080,7 @@ MonoBehaviour:
   secretExitButton: {fileID: 0}
   VideoPlayerObject: {fileID: 679084461}
   NewVid: {fileID: 32900000, guid: f3ee07c14f31b5f42b5f92f6ed3435e8, type: 3}
+  ObjectToHide: {fileID: 0}
 --- !u!114 &411994577
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3971,6 +3977,7 @@ MonoBehaviour:
   secretExitButton: {fileID: 753314058}
   VideoPlayerObject: {fileID: 679084461}
   NewVid: {fileID: 32900000, guid: f3ee07c14f31b5f42b5f92f6ed3435e8, type: 3}
+  ObjectToHide: {fileID: 0}
 --- !u!114 &496840550
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4773,6 +4780,7 @@ MonoBehaviour:
   secretExitButton: {fileID: 0}
   VideoPlayerObject: {fileID: 0}
   NewVid: {fileID: 0}
+  ObjectToHide: {fileID: 0}
 --- !u!114 &643293532
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5445,6 +5453,7 @@ MonoBehaviour:
   secretExitButton: {fileID: 0}
   VideoPlayerObject: {fileID: 679084461}
   NewVid: {fileID: 32900000, guid: 5c8dd7446f88e4f6e8fbe8cded369e68, type: 3}
+  ObjectToHide: {fileID: 0}
 --- !u!114 &753314061
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6780,6 +6789,168 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &883648384
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 883648385}
+  - component: {fileID: 883648390}
+  - component: {fileID: 883648389}
+  - component: {fileID: 883648388}
+  - component: {fileID: 883648387}
+  - component: {fileID: 883648386}
+  m_Layer: 5
+  m_Name: Banan
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &883648385
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 883648384}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1701226597}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 489, y: 406.99997}
+  m_SizeDelta: {x: 150, y: 150}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!95 &883648386
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 883648384}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ca20bf6be4962434084beaa4c2e9cfc7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &883648387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 883648384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f323ca8026fb1e945964ac952f972fd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  btn2:
+  - {fileID: 87545745}
+  secretExitButton: {fileID: 0}
+  VideoPlayerObject: {fileID: 679084461}
+  NewVid: {fileID: 0}
+  ObjectToHide: {fileID: 0}
+--- !u!114 &883648388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 883648384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 883648389}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &883648389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 883648384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 6b72dda5faf7ca94f9838378e8f1abfa, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &883648390
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 883648384}
+  m_CullTransparentMesh: 1
 --- !u!1 &906606443
 GameObject:
   m_ObjectHideFlags: 0
@@ -7670,6 +7841,7 @@ MonoBehaviour:
   secretExitButton: {fileID: 0}
   VideoPlayerObject: {fileID: 679084461}
   NewVid: {fileID: 32900000, guid: 47fabf48d4c494d94b9d1073d8697e50, type: 3}
+  ObjectToHide: {fileID: 0}
 --- !u!114 &980367416
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8396,6 +8568,240 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!1 &1042257240
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1042257241}
+  - component: {fileID: 1042257246}
+  - component: {fileID: 1042257245}
+  - component: {fileID: 1042257244}
+  - component: {fileID: 1042257243}
+  - component: {fileID: 1042257242}
+  m_Layer: 5
+  m_Name: Apple
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1042257241
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1042257240}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1701226597}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 833.00006, y: 393.99997}
+  m_SizeDelta: {x: 150, y: 150}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!95 &1042257242
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1042257240}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 551dcee5d9a42421c9d3e0ecf68e65e7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1042257243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1042257240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f323ca8026fb1e945964ac952f972fd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  btn2:
+  - {fileID: 303452985}
+  secretExitButton: {fileID: 0}
+  VideoPlayerObject: {fileID: 679084461}
+  NewVid: {fileID: 32900000, guid: 00be619a9bc2f094ba2bdc4f4871cda4, type: 3}
+  ObjectToHide: {fileID: 883648384}
+--- !u!114 &1042257244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1042257240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1042257245}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 679084464}
+        m_TargetAssemblyTypeName: VideoChoise, Assembly-CSharp
+        m_MethodName: ChangeClip
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 32900000, guid: 5488b5b6d68239c43bf1e20be871ea21, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Video.VideoClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1042257243}
+        m_TargetAssemblyTypeName: VideoChoiseButton, Assembly-CSharp
+        m_MethodName: ActivateNewButton
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1511317964}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1042257243}
+        m_TargetAssemblyTypeName: VideoChoiseButton, Assembly-CSharp
+        m_MethodName: RemoveButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1042257243}
+        m_TargetAssemblyTypeName: VideoChoiseButton, Assembly-CSharp
+        m_MethodName: ChangeLoopingKlip
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2111947647}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1042257243}
+        m_TargetAssemblyTypeName: VideoChoiseButton, Assembly-CSharp
+        m_MethodName: DisableOnKlick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1042257245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1042257240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 1258ab0c52b878f4385384590ebe03a1, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1042257246
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1042257240}
+  m_CullTransparentMesh: 1
 --- !u!1 &1042780731
 GameObject:
   m_ObjectHideFlags: 0
@@ -8850,6 +9256,7 @@ MonoBehaviour:
   secretExitButton: {fileID: 0}
   VideoPlayerObject: {fileID: 679084461}
   NewVid: {fileID: 32900000, guid: f3ee07c14f31b5f42b5f92f6ed3435e8, type: 3}
+  ObjectToHide: {fileID: 0}
 --- !u!1 &1087969251
 GameObject:
   m_ObjectHideFlags: 0
@@ -10565,6 +10972,7 @@ MonoBehaviour:
   secretExitButton: {fileID: 0}
   VideoPlayerObject: {fileID: 0}
   NewVid: {fileID: 0}
+  ObjectToHide: {fileID: 0}
 --- !u!114 &1219512689
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10883,6 +11291,7 @@ MonoBehaviour:
   secretExitButton: {fileID: 0}
   VideoPlayerObject: {fileID: 679084461}
   NewVid: {fileID: 32900000, guid: b7bc6597f9b42464da197728e152706f, type: 3}
+  ObjectToHide: {fileID: 0}
 --- !u!114 &1241128038
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11243,6 +11652,7 @@ MonoBehaviour:
   secretExitButton: {fileID: 0}
   VideoPlayerObject: {fileID: 0}
   NewVid: {fileID: 0}
+  ObjectToHide: {fileID: 0}
 --- !u!114 &1282429731
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11512,6 +11922,7 @@ MonoBehaviour:
   secretExitButton: {fileID: 0}
   VideoPlayerObject: {fileID: 0}
   NewVid: {fileID: 0}
+  ObjectToHide: {fileID: 0}
 --- !u!114 &1285862514
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12257,6 +12668,7 @@ MonoBehaviour:
   secretExitButton: {fileID: 0}
   VideoPlayerObject: {fileID: 0}
   NewVid: {fileID: 0}
+  ObjectToHide: {fileID: 0}
 --- !u!114 &1431173685
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12528,6 +12940,7 @@ MonoBehaviour:
   secretExitButton: {fileID: 753314058}
   VideoPlayerObject: {fileID: 679084461}
   NewVid: {fileID: 32900000, guid: d1784e2def84af7478b4845b5c61c881, type: 3}
+  ObjectToHide: {fileID: 0}
 --- !u!114 &1434283706
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12753,6 +13166,7 @@ MonoBehaviour:
   secretExitButton: {fileID: 0}
   VideoPlayerObject: {fileID: 679084461}
   NewVid: {fileID: 32900000, guid: 5c8dd7446f88e4f6e8fbe8cded369e68, type: 3}
+  ObjectToHide: {fileID: 0}
 --- !u!114 &1460389145
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12886,6 +13300,7 @@ MonoBehaviour:
   secretExitButton: {fileID: 0}
   VideoPlayerObject: {fileID: 679084461}
   NewVid: {fileID: 32900000, guid: 3eb909803f5dcb64fad52feb50f433af, type: 3}
+  ObjectToHide: {fileID: 0}
 --- !u!114 &1471177741
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13143,6 +13558,7 @@ RectTransform:
   - {fileID: 793640443}
   - {fileID: 1888239868}
   - {fileID: 1397414816}
+  - {fileID: 1701226597}
   - {fileID: 1511317966}
   m_Father: {fileID: 1093152940}
   m_RootOrder: 0
@@ -13531,7 +13947,7 @@ RectTransform:
   m_Children:
   - {fileID: 1570275834}
   m_Father: {fileID: 1500440192}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -13740,6 +14156,7 @@ MonoBehaviour:
   secretExitButton: {fileID: 0}
   VideoPlayerObject: {fileID: 679084461}
   NewVid: {fileID: 32900000, guid: 767d770f64968f949aa65f73b0daef5d, type: 3}
+  ObjectToHide: {fileID: 0}
 --- !u!114 &1562606963
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13939,6 +14356,7 @@ MonoBehaviour:
   secretExitButton: {fileID: 0}
   VideoPlayerObject: {fileID: 679084461}
   NewVid: {fileID: 32900000, guid: 10dbc65be5cd5554099bd048575bc763, type: 3}
+  ObjectToHide: {fileID: 0}
 --- !u!114 &1570275836
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14139,6 +14557,7 @@ MonoBehaviour:
   secretExitButton: {fileID: 0}
   VideoPlayerObject: {fileID: 679084461}
   NewVid: {fileID: 32900000, guid: 767d770f64968f949aa65f73b0daef5d, type: 3}
+  ObjectToHide: {fileID: 0}
 --- !u!114 &1593087355
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14617,6 +15036,7 @@ MonoBehaviour:
   secretExitButton: {fileID: 0}
   VideoPlayerObject: {fileID: 679084461}
   NewVid: {fileID: 32900000, guid: b7bc6597f9b42464da197728e152706f, type: 3}
+  ObjectToHide: {fileID: 0}
 --- !u!114 &1633659038
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15905,6 +16325,39 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1695236500}
   m_CullTransparentMesh: 1
+--- !u!1 &1701226596
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1701226597}
+  m_Layer: 0
+  m_Name: Tavla VALET Efter Fel Val
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1701226597
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1701226596}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -800.0001, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 883648385}
+  - {fileID: 1042257241}
+  m_Father: {fileID: 1500440192}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1724813230
 GameObject:
   m_ObjectHideFlags: 0
@@ -16143,6 +16596,7 @@ MonoBehaviour:
   secretExitButton: {fileID: 0}
   VideoPlayerObject: {fileID: 0}
   NewVid: {fileID: 0}
+  ObjectToHide: {fileID: 0}
 --- !u!1 &1755187052
 GameObject:
   m_ObjectHideFlags: 0
@@ -16201,6 +16655,7 @@ MonoBehaviour:
   secretExitButton: {fileID: 0}
   VideoPlayerObject: {fileID: 679084461}
   NewVid: {fileID: 32900000, guid: 067d54ee3e360d840b911af073e99637, type: 3}
+  ObjectToHide: {fileID: 0}
 --- !u!114 &1755187055
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16503,6 +16958,7 @@ MonoBehaviour:
   secretExitButton: {fileID: 0}
   VideoPlayerObject: {fileID: 0}
   NewVid: {fileID: 0}
+  ObjectToHide: {fileID: 0}
 --- !u!114 &1840214011
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17428,6 +17884,7 @@ MonoBehaviour:
   secretExitButton: {fileID: 0}
   VideoPlayerObject: {fileID: 679084461}
   NewVid: {fileID: 32900000, guid: d3a4ede3034572c4090753163e14e3ca, type: 3}
+  ObjectToHide: {fileID: 0}
 --- !u!114 &2055672088
 MonoBehaviour:
   m_ObjectHideFlags: 0
