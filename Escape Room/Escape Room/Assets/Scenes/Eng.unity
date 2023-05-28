@@ -2336,7 +2336,7 @@ MonoBehaviour:
         m_MethodName: ChangeClip
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 32900000, guid: 158f603d80007444394dbb831445287f, type: 3}
+          m_ObjectArgument: {fileID: 32900000, guid: 7345b93f049444940a4883d2cce486ef, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Video.VideoClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -3154,7 +3154,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.23641671, y: 0.6167778}
   m_AnchorMax: {x: 0.23641671, y: 0.6167778}
-  m_AnchoredPosition: {x: -7.000244, y: 10}
+  m_AnchoredPosition: {x: -7.0002747, y: 10}
   m_SizeDelta: {x: 120, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!111 &467364539
