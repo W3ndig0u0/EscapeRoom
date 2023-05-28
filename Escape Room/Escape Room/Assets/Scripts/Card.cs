@@ -17,13 +17,15 @@ public class Card : MonoBehaviour
     private Animator animator; // Reference to the Animator component
 
     public AudioSource audio;
-    private void Awake()
-    {
-        spriteRenderer = GetComponent<Image>();
-    }
 
     private void Start()
     {
+        GetComponent();
+    }
+
+    public void GetComponent()
+    {
+        spriteRenderer = GetComponent<Image>();
         animator = GetComponent<Animator>();
         audio = GetComponent<AudioSource>();
     }

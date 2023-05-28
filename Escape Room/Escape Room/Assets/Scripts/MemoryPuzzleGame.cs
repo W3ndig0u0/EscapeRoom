@@ -8,6 +8,7 @@ public class MemoryPuzzleGame : MonoBehaviour
     public Card[] cards; // Array of all cards in the game
     private Card previousCard; // Previously flipped card
     private int score; // Player's score
+    private bool won;
     public GameObject timerSlider;
     private Animator animator;
     private bool isInputEnabled = true;
@@ -49,6 +50,7 @@ public class MemoryPuzzleGame : MonoBehaviour
 
 private void CardClicked(Card clickedCard)
 {
+
     if (!isInputEnabled || clickedCard.IsMatched || clickedCard == previousCard)
     {
         return;
@@ -80,7 +82,7 @@ private void CardClicked(Card clickedCard)
 
     if (score == cards.Length / 2)
     {
-        GameIsWon();
+        StartCoroutine(GameIsWon());
         timerSlider.SetActive(false);
     }
 
@@ -99,8 +101,9 @@ private void CardClicked(Card clickedCard)
     {
         yield return new WaitForSeconds(0.5f);
 
-        Destroy(card1.gameObject);
-        Destroy(card2.gameObject);
+        card1.gameObject.SetActive(false);
+        card2.gameObject.SetActive(false);
+
         Debug.Log(score);
     }
 
@@ -113,16 +116,19 @@ private void CardClicked(Card clickedCard)
         card2.FlipBackAnimation();
     }
 
-    public void GameIsWon()
+    public IEnumerator GameIsWon()
     {
+        yield return new WaitForSeconds(0.35f);
+
         if (cards[0] != null)
         {
             foreach (Card card in cards)
             {
-                Destroy(card.gameObject);
+                card.gameObject.SetActive(false);
             }
         }
 
+        won = true;
         videoChoise.ChangeClipAuto(clip);
         videoChoise.ChangeClip(clip);
         btnParent.SetActive(true);
@@ -135,7 +141,7 @@ private void CardClicked(Card clickedCard)
         {
             foreach (Card card in cards)
             {
-                Destroy(card.gameObject);
+                card.gameObject.SetActive(false);
             }
         }
 
@@ -143,9 +149,40 @@ private void CardClicked(Card clickedCard)
         fastForwardBtn.SetActive(true);
         MusicController.ReplaceAudioSource(defaultBgMusic);
     }
+    public void Restart()
+    {
+        if (won)
+        {
+            for (int i = 0; i < cards.Length; i++)
+            {
+                Card card = cards[i];
+             
+                for (int j = 1; j < cards.Length; j++)
+                {
+                    card.IsMatch(cards[i]);
+
+                }
+
+                card.gameObject.SetActive(true);
+                card.GetComponent();
+                card.Flip();
+            }
+        }
+
+        timerSlider.SetActive(true);
+
+        previousCard = null;
+        won = false;
+        score = 0;
+    }
+
 
     public void Activate()
     {
+        if (won)
+        {
+            return;
+        }
         memoryGame.SetActive(true);
         fastForwardBtn.SetActive(false);
         MusicController.ReplaceAudioSource(memoryAudio);

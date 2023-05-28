@@ -55,6 +55,10 @@ public class VideoChoiseButton : MonoBehaviour
         btnParent.SetActive(true);
     }
 
+    public void ActivateButtonAll(Button btn)
+    {
+        btn.gameObject.SetActive(true);
+    }
     public void Replay()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);

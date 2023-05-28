@@ -4,7 +4,7 @@ using UnityEngine.UI;
 public class TimerSlider : MonoBehaviour
 {
   public MemoryPuzzleGame memoryPuzzleGame;
-  public float totalTime; // total time in seconds
+  public float totalTime = 75; // total time in seconds
   private float timeLeft; // time left in seconds
   private Slider slider; // reference to the UI Slider component
   public VideoChoiseButton videoChoiseButton;
@@ -27,8 +27,12 @@ public class TimerSlider : MonoBehaviour
     slider.value = timeLeft; // set the value of the Slider based on the remaining time
   }
 
-
-  public void GameOver()
+public void RefillSlider()
+{
+    timeLeft = totalTime;
+    slider.value = totalTime;
+}
+public void GameOver()
   {
     memoryPuzzleGame.GameIsOver();
     videoChoiseButton.Replay();
