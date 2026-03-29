@@ -1,6 +1,6 @@
 # Escape Room 🗝️
 
-A **Unity-based 3D puzzle game** developed as a university project with 5 people. This immersive escape room experience focuses on **user-driven storytelling** and interactive input systems.
+A **Unity-based 3D puzzle game** developed as a university project with 6 people. This immersive escape room experience focuses on **user-driven storytelling** and interactive input systems.
 
 ## ✨ Features
 *   **Interactive Narrative**: Progress is driven by user choices and discovered clues.
