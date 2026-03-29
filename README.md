@@ -9,9 +9,9 @@ A **Unity-based 3D puzzle game** developed as a university project with 6 people
 *   **Atmospheric Design**: Built with high-fidelity lighting and sound to enhance the mystery.
 
 ## 🛠️ Tech Stack
-*   **Engine**: Unity 3D
+*   **Engine**: Unity
 *   **Language**: C#
-*   **Input**: Unity Input System (Mouse/Keyboard interaction)
+*   **Input**: Unity Input System
 
 ## 🚀 Quick Start
 1.  **Clone**: `git clone https://github.com`
